@@ -1,0 +1,16 @@
+function isIsogram(str){
+ if(str.length == 0) return true;
+  var arr = [];
+  for(var i = 0; i<92;i++)
+  {
+    arr[i] = false;
+  }
+  str = str.toUpperCase();
+  for(var i = 0; i<str.length;i++)
+    {
+      var index = str.charCodeAt(i);
+      if(arr[index] == false) arr[index] = true;
+      else return false;
+    }
+  return true;
+}

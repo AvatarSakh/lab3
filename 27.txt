@@ -1,0 +1,11 @@
+function getParticipants(handshakes){
+  if(handshakes == 0) return 0;
+  if(handshakes == 1) return 2;
+  var sum = 3;
+  var i = 3;
+  while(true){
+    if(handshakes <= sum) return i;
+    sum +=i;
+    i++;
+  }
+}

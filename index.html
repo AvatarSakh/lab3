@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /* Задание 1*/
+        console.log("Задание 1");
+        alert( null || 2 || undefined );
+
+        /* Задание 2*/
+        console.log("Задание 2");
+        alert( alert(1) || 2 || alert(3) );
+
+        /* Задание 3*/
+        console.log("Задание 3");
+        alert( 1 && null && 2 );
+
+        /* Задание 4*/
+        console.log("Задание 4");
+        alert( alert(1) && alert(2) );
+
+        /* Задание 5*/
+        console.log("Задание 5");
+        alert( null || 2 && 3 || 4 );
+
+        /* Задание 6*/
+        console.log("Задание 6");
+        let age = 60;
+        if(age > 14 && age <= 90) console.log("Входит")
+
+        /* Задание 7*/
+        console.log("Задание 7");
+        if(age < 14 && age >= 90) console.log("Не Входит")
+        else console.log("входит");
+        if(age > 14 && age <= 90) console.log("Входит")
+        else console.log("не входит");
+
+        /* Задание 8*/
+        console.log("Задание 8");
+        if (-1 || 0) alert( 'first' );
+        if (-1 && 0) alert( 'second' );
+        if (null || -1 && 1) alert( 'third' );
+        
+        /* Задание 9*/
+        console.log("Задание 9");
+        let admin;
+        let password;
+
+        admin = prompt("Логин");
+        if(admin == "null" || admin == null || admin == "" ) alert("Отменено");
+        else{
+            if(admin !="Админ") alert("Я вас не знаю");
+        }
+        
+        if(admin == "Админ") {
+            password = prompt("Пароль");
+            if(password == "null" || password == null || password == ""){
+                alert("Отменено");
+            }else{
+                
+                if(password != 1234) alert("Неверный пароль")
+                else{
+                    alert("Здравствуйте!");
+                }
+            }
+            
+        }
+        
+
+        /* Задание 10*/
+        console.log("Задание 10");
+        let i = 3;
+        while (i) {
+         alert( i-- );
+            }
+
+
+        /* Задание 11*/
+        console.log("Задание 11");
+            i = 0;
+            while (++i < 5) alert(i);
+            i = 0;
+            while (i++ < 5) alert(i);
+
+
+        /* Задание 12*/
+        console.log("Задание 12");
+        for (let i = 0; i < 5; i++) alert( i );
+
+for (let i = 0; i < 5; ++i) alert( i );
+
+        
+        /* Задание 13*/
+        console.log("Задание 13");
+        for(let i = 2; i < 11;i+=2)
+        {
+            console.log(i);
+        }
+        
+        
+        /* Задание 14*/
+        console.log("Задание 14");
+        i = 0;
+while(i<3)
+{
+  alert( `number ${i++}!` );
+}
+
+        
+        /* Задание 15*/
+        console.log("Задание 15");
+        let input = 0;
+        while(input < 100)
+        {
+            input = prompt("Введите число больше 100");
+            if(input == null) break;
+        }
+
+        /* Задание 16*/
+        console.log("Задание 16");
+        let n = 22;
+        console.log(2);
+        console.log(3);
+        for(let i = 4;i<n+1;i++)
+        {
+            if(i%2 !=0 && i%3 !=0) console.log(i);
+        }
+
+        /* Задание 17*/
+        console.log("Задание 17");
+        let browser = "";
+        if(browser == 'Edge'){
+            alert( "You've got the Edge!" );
+        }
+        else{
+            if(browser == 'Chrome' || browser == 'Firefox' || browser == 'Safari' || browser == 'Opera')
+            {
+                alert( 'Okay we support these browsers too' );
+            }
+            else{
+                alert( 'We hope that this page looks ok!' );
+            }
+        }
+
+        /* Задание 18*/
+        console.log("Задание 18");
+        const number = +prompt('Введите число между 0 и 3', '');
+        switch(number){
+            case 0: alert('Вы ввели число 0');
+                break;
+                case 1:alert('Вы ввели число 1');
+                break;
+                case 2:
+                case 3:
+                alert('Вы ввели число 2, а может и 3');
+                break;
+        }
+
+        /* Задание 19*/
+        console.log("Задание 19");
+            //нету различий
+
+        /* Задание 20*/
+        console.log("Задание 20");
+
+        function checkAge(age) {
+  
+            return age>18? true : confirm('Родители разрешили?'); 
+        }
+
+        function checkAge(age) {
+  
+ return age > 18 || confirm('Родители разрешили?'); 
+}
+
+
+        /* Задание 21*/
+        console.log("Задание 21");
+        function min(a,b)
+        {
+            return a > b ? b : a;
+        }
+
+
+        /* Задание 22*/
+        console.log("Задание 22");
+        function pow(x,n)
+        {
+            let result = x;
+            for(var i =1; i<n;i++)
+            {
+                result *=x;
+            }
+            return result;
+        }
+        console.log(pow(2,3));
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

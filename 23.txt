@@ -1,0 +1,20 @@
+function highAndLow(numbers){
+  var num = numbers.split(" ");
+  var temp = Number(num[0]);
+  var max = temp;
+  var min = temp;
+  for(var i = 1; i < numbers.length;i++)
+  {
+    var temp = Number(num[i]);
+      if(temp>max){
+         max = temp;
+         continue;
+         }
+      if(temp<min){
+        min = temp;
+        continue;
+         }
+    
+  }
+  return `${max} ${min}`;
+}
